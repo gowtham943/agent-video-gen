@@ -40,7 +40,7 @@ For films over about 90 seconds, group scenes into chapters: a short opening, on
 
 - Headline: 2 to 7 words per line, 2 lines. Concrete verbs: "Turn", "Ask", "See", "Ship". No "revolutionary", "seamless", "next-generation", "leverage".
 - Body: one sentence, 12 to 20 words, written for the viewer ("you", "your team"), not about the company.
-- Parallel structure across feature scenes ("Extract. Interact. Report.").
+- Parallel structure across feature scenes ("Capture. Organize. Share.").
 - Say what the product does before saying how well. Do not say how well at all without a sourced fact.
 - Availability must match the product stage. In development: say so on the last scene (`claims.required`). Never imply "available now", "instant", or "no setup".
 - Use the product's own feature names verbatim. Never invent new product labels.

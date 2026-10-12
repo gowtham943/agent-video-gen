@@ -10,7 +10,7 @@ A cross-agent plugin (Claude Code, Cursor, Codex) that turns a prompt about any 
 | `skills/review-product-video/` | QA, copy audit, troubleshooting, final render |
 | `commands/` | `/make-video`, `/review-video` (Claude Code and Cursor) |
 | `rules/` | Cursor rule applied when editing a film's `video.config.json` or `brief.md` |
-| `examples/groundx-studio/` | Worked example: config, brief, assets. Product-specific content lives only here |
+| `examples/sample-saas/` | Fictional worked example (Northstar Notes). Do not ship real customer products here |
 | `.claude-plugin/`, `.cursor-plugin/`, `.codex-plugin/`, `.agents/plugins/` | Manifests and local marketplaces |
 | `scripts/install-skills.mjs` | Symlink fallback install for any agent |
 | `tests/plugin.test.mjs` | Manifest, skill, example, and scaffold checks |

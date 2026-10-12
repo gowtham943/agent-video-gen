@@ -1,0 +1,83 @@
+{
+  "schema": 2,
+  "slug": "sample-saas",
+  "title": "Northstar Notes sample film",
+  "brand": {
+    "name": "Northstar Notes",
+    "logo": null,
+    "hudLabel": "Shared notes / in beta"
+  },
+  "theme": {
+    "background": "#0f1530",
+    "primary": "#7cf0c8",
+    "secondary": "#b8d4ff",
+    "highlight": "#ff7a59",
+    "ink": "#232b52",
+    "text": "#ffffff",
+    "font": "Inter"
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "seed": 20261012,
+  "pillars": ["Capture", "Organize", "Share"],
+  "claims": {
+    "forbidden": ["available now", "generally available"],
+    "required": [{"phrase": "in beta", "scope": "last"}],
+    "sourced": []
+  },
+  "scenes": [
+    {
+      "motif": "document",
+      "duration": 4.6,
+      "chapter": "Notes",
+      "eyebrow": "MEETINGS GO SOMEWHERE",
+      "heading": "Stop losing\nwhat was said.",
+      "body": "Northstar Notes keeps the conversation next to the work that should follow it.",
+      "items": ["Standup", "Client call", "Retro"]
+    },
+    {
+      "motif": "stream",
+      "duration": 4.8,
+      "chapter": "Capture",
+      "eyebrow": "01 / CAPTURE",
+      "heading": "Write once.\nKeep the thread.",
+      "body": "Drop notes in during the meeting and keep speakers, decisions, and files together.",
+      "pillar": 0,
+      "items": ["Notes", "Decisions", "Files"]
+    },
+    {
+      "motif": "lattice",
+      "duration": 4.8,
+      "chapter": "Organize",
+      "eyebrow": "02 / ORGANIZE",
+      "heading": "Turn talk into\nnext steps.",
+      "body": "Highlight a line and it becomes a task, an owner, and a date the team can see.",
+      "accent": "secondary",
+      "pillar": 1,
+      "items": ["Tasks", "Owners", "Dates"]
+    },
+    {
+      "motif": "panels",
+      "duration": 4.8,
+      "chapter": "Share",
+      "eyebrow": "03 / SHARE",
+      "heading": "Send a week\nthat makes sense.",
+      "body": "Share a recap the rest of the team can read without sitting through the call.",
+      "accent": "highlight",
+      "pillar": 2,
+      "items": ["Recap", "Follow-ups", "Handoff"]
+    },
+    {
+      "motif": "portals",
+      "duration": 5.0,
+      "chapter": "Close",
+      "eyebrow": "NORTHSTAR NOTES",
+      "heading": "A quieter way\nto run the week.",
+      "body": "Capture, organize, and share from the same notebook.",
+      "action": "CAPTURE  •  ORGANIZE  •  SHARE",
+      "footnote": "Northstar Notes is in beta.",
+      "items": ["Capture", "Organize", "Share"]
+    }
+  ]
+}

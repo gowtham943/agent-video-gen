@@ -70,9 +70,9 @@ Add `--uninstall` to remove the links.
 In Claude Code or Cursor, after install:
 
 ```text
-/make-video Make a 75-second LinkedIn video for GroundX Studio.
-Business users. Extract, Interact, Report. It is in development.
-Do not invent numbers. Use the white logo and navy/green/cyan/coral palette.
+/make-video Make a 75-second LinkedIn video for Acme Billing.
+Invoicing for freelancers. Cover invoices, reminders, and payments.
+It is in beta. Do not invent numbers.
 ```
 
 The agent will:
@@ -97,10 +97,10 @@ npm run validate
 npm run render          # output/my-film.mp4
 ```
 
-Worked example:
+Worked example (fictional product):
 
 ```bash
-node skills/make-product-video/scripts/scaffold.mjs ./gx-film --example groundx-studio --install
+node skills/make-product-video/scripts/scaffold.mjs ./demo-film --example sample-saas --install
 ```
 
 ### Film project commands
@@ -157,7 +157,7 @@ Story, brand, and claims live in `video.config.json`. Geometry is seeded from th
 | `skills/make-product-video/` | Create skill, storyboard rules, Helios + Three.js engine |
 | `skills/review-product-video/` | Audit copy and render an existing film |
 | `commands/` | `/make-video`, `/review-video` |
-| `examples/groundx-studio/` | Worked example (config, brief, logo) |
+| `examples/sample-saas/` | Fictional worked example |
 | `.claude-plugin/` `.cursor-plugin/` `.codex-plugin/` | Agent manifests |
 
 Contributor notes: [`AGENTS.md`](AGENTS.md).

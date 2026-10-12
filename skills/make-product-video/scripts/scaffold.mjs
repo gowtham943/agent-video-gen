@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Create a new video project from the bundled engine.
 //
-//   node scaffold.mjs <target-dir> [--slug my-product] [--example groundx-studio] [--install] [--force]
+//   node scaffold.mjs <target-dir> [--slug my-product] [--example sample-saas] [--install] [--force]
 //
 // The engine is copied (not linked) so each video is a self-contained project the user can edit.
 import {spawnSync} from "node:child_process";

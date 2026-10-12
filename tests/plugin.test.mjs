@@ -48,7 +48,7 @@ test("commands carry a description", () => {
 test("shipped configs are valid and pass the claims lint", () => {
   const configs = [
     "skills/make-product-video/engine/video.config.json",
-    ...readdirSync(join(root, "examples")).map((name) => `examples/${name}/video.config.json`)
+    ...(existsSync(join(root, "examples")) ? readdirSync(join(root, "examples")).map((name) => `examples/${name}/video.config.json`) : [])
   ];
   for (const file of configs) {
     const config = json(file);
@@ -79,11 +79,11 @@ test("scaffold creates a runnable project from the sample and from an example", 
   const refuse = spawnSync("node", [scaffold, plain], {encoding: "utf8"});
   assert.notEqual(refuse.status, 0, "must refuse a non-empty folder");
 
-  const gx = join(base, "gx");
-  const b = spawnSync("node", [scaffold, gx, "--example", "groundx-studio"], {encoding: "utf8"});
+  const sample = join(base, "sample");
+  const b = spawnSync("node", [scaffold, sample, "--example", "sample-saas"], {encoding: "utf8"});
   assert.equal(b.status, 0, b.stderr);
-  assert.equal(JSON.parse(readFileSync(join(gx, "video.config.json"), "utf8")).slug, "groundx-studio");
-  assert.ok(existsSync(join(gx, "public/assets/groundx-studio-white.png")));
+  assert.equal(JSON.parse(readFileSync(join(sample, "video.config.json"), "utf8")).slug, "sample-saas");
+  assert.ok(existsSync(join(sample, "brief.md")));
 
   const bad = spawnSync("node", [scaffold, join(base, "x"), "--example", "nope"], {encoding: "utf8"});
   assert.notEqual(bad.status, 0);
