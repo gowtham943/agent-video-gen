@@ -1,0 +1,134 @@
+{
+  "schema": 2,
+  "slug": "groundx-studio",
+  "title": "GroundX Studio for business users",
+  "brand": {
+    "name": "GroundX Studio",
+    "logo": "./assets/groundx-studio-white.png",
+    "hudLabel": "Business intelligence / in motion"
+  },
+  "theme": {
+    "background": "#10162c",
+    "primary": "#a1ec83",
+    "secondary": "#c1e8ee",
+    "highlight": "#f3663f",
+    "ink": "#29335c",
+    "text": "#ffffff",
+    "font": "Inter"
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "seed": 5365216,
+  "pillars": [
+    "EXTRACT",
+    "INTERACT",
+    "REPORT"
+  ],
+  "claims": {
+    "forbidden": [
+      "generally available",
+      "available now",
+      "zero engineering",
+      "no engineering",
+      "on-premises",
+      "air-gapped"
+    ],
+    "required": [
+      {
+        "phrase": "in development",
+        "scope": "last"
+      }
+    ],
+    "sourced": []
+  },
+  "scenes": [
+    {
+      "motif": "document",
+      "duration": 4.4,
+      "chapter": "DOCUMENTS",
+      "eyebrow": "COMPLEX DOCUMENTS. CLEAR OUTCOMES.",
+      "heading": "Your documents\nknow more.",
+      "body": "GroundX reads complex enterprise documents and turns their structure into usable information.",
+      "items": [
+        "Tables",
+        "Forms",
+        "Diagrams"
+      ]
+    },
+    {
+      "motif": "scan",
+      "duration": 4.8,
+      "chapter": "READ",
+      "eyebrow": "DOCUMENT INTELLIGENCE",
+      "heading": "GroundX reads\nthe whole page.",
+      "body": "Page structure stays connected, so business teams can work with information in context.",
+      "items": [
+        "Layout",
+        "Context",
+        "Structure"
+      ]
+    },
+    {
+      "motif": "lattice",
+      "duration": 4.8,
+      "chapter": "EXTRACT",
+      "eyebrow": "01 / EXTRACT",
+      "heading": "Turn complexity into\nstructured data.",
+      "body": "Pull fields, values, relationships, and context into consistent outputs.",
+      "pillar": 0,
+      "items": [
+        "Fields",
+        "Values",
+        "Relationships",
+        "Context"
+      ]
+    },
+    {
+      "motif": "constellation",
+      "duration": 4.8,
+      "chapter": "INTERACT",
+      "eyebrow": "02 / INTERACT",
+      "heading": "Ask. Understand.\nVerify.",
+      "body": "Get grounded answers with citations that lead back to the source.",
+      "accent": "secondary",
+      "pillar": 1,
+      "items": [
+        "Question",
+        "Answer",
+        "Citation",
+        "Source"
+      ]
+    },
+    {
+      "motif": "panels",
+      "duration": 4.8,
+      "chapter": "REPORT",
+      "eyebrow": "03 / REPORT",
+      "heading": "Make insight\nready to share.",
+      "body": "Assemble source-backed reports and keep exploring with follow-up questions.",
+      "accent": "highlight",
+      "pillar": 2,
+      "items": [
+        "Report",
+        "Evidence",
+        "Follow-up"
+      ]
+    },
+    {
+      "motif": "portals",
+      "duration": 5.4,
+      "chapter": "STUDIO",
+      "eyebrow": "GROUNDX STUDIO",
+      "heading": "Document intelligence,\nmade usable.",
+      "body": "A focused business-user experience for seeing and using GroundX outputs.",
+      "action": "EXTRACT  \u2022  INTERACT  \u2022  REPORT",
+      "footnote": "GroundX Studio is in development.",
+      "items": [
+        "Extract",
+        "Interact",
+        "Report"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "schema": 2,
+  "slug": "sample-film",
+  "title": "Sample product film",
+  "brand": {
+    "name": "Your Product",
+    "logo": null,
+    "hudLabel": "Product film"
+  },
+  "theme": {
+    "background": "#0f1530",
+    "primary": "#7cf0c8",
+    "secondary": "#b8d4ff",
+    "highlight": "#ff7a59",
+    "ink": "#232b52",
+    "text": "#ffffff",
+    "font": "Inter"
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "seed": 20260101,
+  "pillars": [
+    "Connect",
+    "Automate",
+    "Share"
+  ],
+  "claims": {
+    "forbidden": [
+      "available now",
+      "generally available"
+    ],
+    "required": [],
+    "sourced": []
+  },
+  "scenes": [
+    {
+      "motif": "screen",
+      "duration": 4.6,
+      "chapter": "Overview",
+      "eyebrow": "A SAMPLE PRODUCT FILM",
+      "heading": "One place for\nthe work.",
+      "body": "Replace this copy with the story of your product. Every scene pairs one visual idea with one short message.",
+      "items": [
+        "Overview",
+        "Inbox",
+        "Projects",
+        "Reports"
+      ]
+    },
+    {
+      "motif": "stream",
+      "duration": 4.8,
+      "chapter": "Connect",
+      "eyebrow": "01 / CONNECT",
+      "heading": "Bring everything\ntogether.",
+      "body": "Show the first thing your product does for the people who use it.",
+      "pillar": 0,
+      "items": [
+        "Email",
+        "Chat",
+        "Files"
+      ]
+    },
+    {
+      "motif": "constellation",
+      "duration": 4.8,
+      "chapter": "Automate",
+      "eyebrow": "02 / AUTOMATE",
+      "heading": "Let the busywork\nrun itself.",
+      "body": "Show the second thing, in the language your customers use.",
+      "accent": "secondary",
+      "pillar": 1,
+      "items": [
+        "Rules",
+        "Triggers",
+        "Actions"
+      ]
+    },
+    {
+      "motif": "panels",
+      "duration": 4.8,
+      "chapter": "Share",
+      "eyebrow": "03 / SHARE",
+      "heading": "Share what\nmatters.",
+      "body": "Show the outcome your product delivers.",
+      "accent": "highlight",
+      "pillar": 2,
+      "items": [
+        "Weekly summary",
+        "Status",
+        "Handoff"
+      ]
+    },
+    {
+      "motif": "portals",
+      "duration": 5.0,
+      "chapter": "Close",
+      "eyebrow": "YOUR PRODUCT",
+      "heading": "A clear line\nto the outcome.",
+      "body": "Close with one sentence you would be comfortable saying out loud.",
+      "action": "CONNECT  \u2022  AUTOMATE  \u2022  SHARE",
+      "footnote": "Replace with your call to action",
+      "items": [
+        "Connect",
+        "Automate",
+        "Share"
+      ]
+    }
+  ]
+}

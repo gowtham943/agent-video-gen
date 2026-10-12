@@ -1,0 +1,37 @@
+{
+  "name": "agent-video-gen-project",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite --open /preview.html",
+    "build": "vite build",
+    "preview": "vite preview --open /preview.html",
+    "doctor": "node scripts/doctor.mjs",
+    "validate": "node scripts/validate.mjs",
+    "capture": "node scripts/capture.mjs",
+    "still": "npm run validate && npm run build && node scripts/still.mjs",
+    "render": "npm run validate && npm run build && node scripts/render.mjs",
+    "verify": "npm run build && helios verify dist/index.html --samples 8 --width 1920 --height 1080 --no-serve",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run validate && npm run typecheck && npm test && npm run build",
+    "qa": "npm run check && npm run verify"
+  },
+  "dependencies": {
+    "@helios-project/core": "5.13.2",
+    "@helios-project/player": "0.78.1",
+    "@helios-project/renderer": "1.79.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@helios-project/cli": "0.46.0",
+    "@types/three": "^0.186.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9",
+    "vitest": "^3.2.4"
+  }
+}

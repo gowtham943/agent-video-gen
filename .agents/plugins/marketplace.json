@@ -1,0 +1,20 @@
+{
+  "name": "agent-video-gen-dev",
+  "interface": {
+    "displayName": "Agent Video Gen Dev"
+  },
+  "plugins": [
+    {
+      "name": "agent-video-gen",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creative"
+    }
+  ]
+}

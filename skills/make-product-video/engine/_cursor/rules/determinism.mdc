@@ -1,0 +1,15 @@
+---
+description: Determinism and structure rules for the Helios/Three.js composition
+globs: src/**/*.ts,src/**/*.css,scripts/**/*.mjs,video.config.json
+alwaysApply: false
+---
+
+# Composition rules
+
+- Derive every visible state from the Helios `currentFrame`. Never use `Date.now()`, `performance.now()`, `Math.random()`, or previous-frame state. Use `seededRandom` from `src/timeline.ts`.
+- No CSS `transition`, `animation`, or `will-change` (they carry state between frames).
+- Copy, theme, and claims live in `video.config.json`; rendering lives in `src/`.
+- New visuals are motifs in `src/motifs/`: export a `MotifDef`, register it in `src/motifs/index.ts` and in `scripts/lib/validate.mjs` (a test checks both lists match), add a line to the motif catalogue, and add it to nothing else.
+- Keep asset URLs relative (`./assets/...`).
+- Never edit `dist/` or `output/`.
+- Run `npm run validate` after changes, then `npm run render`. Do not generate a preview or stills unless asked.

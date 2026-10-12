@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agent Video Gen Preview</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #050711; color: #eef2ff; font-family: Inter, ui-sans-serif, system-ui; }
+      .shell { width: min(94vw, 1280px); }
+      .label { display: flex; justify-content: space-between; margin: 0 0 14px; color: #93a0bd; letter-spacing: .08em; text-transform: uppercase; font-size: 12px; }
+      helios-player { width: 100%; aspect-ratio: 16 / 9; display: block; overflow: hidden; border: 1px solid #26314c; border-radius: 20px; box-shadow: 0 30px 100px #000a; }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="label"><span>Helios preview</span><span>1920 × 1080 · 30 fps</span></div>
+      <helios-player src="./index.html" width="1920" height="1080" controls></helios-player>
+    </div>
+    <script type="module">import "@helios-project/player";</script>
+  </body>
+</html>

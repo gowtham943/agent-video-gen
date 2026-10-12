@@ -1,0 +1,13 @@
+---
+description: Claim and determinism guardrails when editing a generated film project
+globs: **/video.config.json,**/brief.md
+alwaysApply: false
+---
+
+# Product film guardrails
+
+- Every line of on-screen copy must trace back to `brief.md`. Do not invent features, numbers, customers, awards, or availability.
+- Numbers and superlatives ("best", "fastest", "instantly", "guaranteed") appear only if listed in `claims.sourced` with a source the user supplied.
+- Match availability language to the product stage. If the product is not generally available, keep a `claims.required` line on the last scene.
+- Use canonical feature names verbatim. Never rename them.
+- Run `npm run validate` after every edit to `video.config.json`, then `npm run render`. Do not generate stills or a preview unless asked.

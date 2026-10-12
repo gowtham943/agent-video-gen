@@ -1,0 +1,12 @@
+---
+description: Development workflow for the agent-video-gen plugin repository
+alwaysApply: true
+---
+
+# Plugin development workflow
+
+- This repo is a cross-agent plugin (Claude Code, Cursor, Codex). Skills in `skills/` are the shared source of truth; the three manifests in `.claude-plugin/`, `.cursor-plugin/`, `.codex-plugin/` must keep the same name, version, and description.
+- The engine lives in `skills/make-product-video/engine/`. After engine changes run `npm test` and `npm run typecheck` there, then `npm test` at the repo root (scaffold smoke test).
+- Visual changes: scaffold into `.scratch/` (gitignored), symlink the engine's `node_modules`, run `npm run still`, and read the contact sheet. Rendering and stills launch Chromium and need to run outside the sandbox.
+- Renders are slow; run them in the background and poll.
+- Keep the plugin product-agnostic. Product-specific copy belongs in `examples/`.

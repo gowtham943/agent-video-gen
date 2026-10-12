@@ -1,0 +1,36 @@
+{
+  "name": "agent-video-gen",
+  "version": "0.1.0",
+  "description": "Turn a prompt about any product into a cinematic 3D product video up to 10 minutes. Product-specific copy, images, and animation, with claim guardrails, rendered straight to MP4.",
+  "author": {
+    "name": "gowtham943"
+  },
+  "keywords": [
+    "video",
+    "product-video",
+    "promo",
+    "three.js",
+    "helios",
+    "marketing",
+    "storyboard",
+    "mp4"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Agent Video Gen",
+    "shortDescription": "Make a cinematic product video from a prompt",
+    "longDescription": "Describe any product and get an on-brand 3D product film up to 10 minutes: a brief, scene copy checked against claim guardrails, product-specific visuals, and an MP4 rendered directly.",
+    "developerName": "gowtham943",
+    "category": "Creative",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Make a launch video for my product.",
+      "Create a cinematic promo video for this app using the README as the source."
+    ],
+    "brandColor": "#7cf0c8"
+  }
+}

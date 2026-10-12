@@ -1,0 +1,18 @@
+{
+  "name": "agent-video-gen-dev",
+  "description": "Local marketplace for agent-video-gen",
+  "owner": {
+    "name": "gowtham943"
+  },
+  "plugins": [
+    {
+      "name": "agent-video-gen",
+      "description": "Turn a prompt about any product into a cinematic 3D product video up to 10 minutes. Product-specific copy, images, and animation, with claim guardrails, rendered straight to MP4.",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "gowtham943"
+      }
+    }
+  ]
+}
